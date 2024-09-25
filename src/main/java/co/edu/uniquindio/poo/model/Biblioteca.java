@@ -1,14 +1,18 @@
 package co.edu.uniquindio.poo.model;
 
 public class Biblioteca {
+    String nombre;
 
-    private String nombre;
-    private Libro[][] listaLibros;
-
-    public Biblioteca(String nombre) {//Euclides
+    public Biblioteca(String nombre) {
         this.nombre = nombre;
     }
-
     
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
 }
