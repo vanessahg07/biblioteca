@@ -1,11 +1,10 @@
 package co.edu.uniquindio.poo.model;
 
 public class Bibliotecario extends Persona {
-
     private double salario;
 
-    public Bibliotecario(String cedula, String correo, String nombre, String telefono, double salario) {
-        super(cedula, correo, nombre, telefono);
+    public Bibliotecario(String nombre, String cedula, String telefono, String correo, double salario) {
+        super(nombre, cedula, telefono, correo);
         this.salario = salario;
     }
 

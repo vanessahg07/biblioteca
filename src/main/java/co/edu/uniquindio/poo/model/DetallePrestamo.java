@@ -2,11 +2,14 @@ package co.edu.uniquindio.poo.model;
 
 public class DetallePrestamo {
     private double subTotal;
-    private byte cantidad;
+    private int cantidad;
+    private Libro libros;
+    
 
-    public DetallePrestamo(double subTotal, byte cantidad) {
+    public DetallePrestamo(double subTotal, int cantidad, Libro libros) {
         this.subTotal = subTotal;
         this.cantidad = cantidad;
+        this.libros = libros;
     }
 
     public double getSubTotal() {
@@ -17,11 +20,25 @@ public class DetallePrestamo {
         this.subTotal = subTotal;
     }
 
-    public byte getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(byte cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    public DetallePrestamo() {
+    }
+
+    public Libro getLibros() {
+        return libros;
+    }
+
+    public void setLibros(Libro libros) {
+        this.libros = libros;
+    }
+
+    
+
 }
